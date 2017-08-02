@@ -1,0 +1,24 @@
+
+{
+  "name": "react-native-uncontrolled-date-picker-ios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "datepicker",
+    "ios"
+  ],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "prop-types": "*"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
