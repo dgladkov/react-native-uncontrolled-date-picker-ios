@@ -1,17 +1,17 @@
+require 'json'
+package = JSON.parse(File.read('package.json'))
+
 Pod::Spec.new do |s|
-  s.name         = "RNUncontrolledDatePickerIOS"
-  s.version      = "1.0.0"
-  s.summary      = "RNUncontrolledDatePickerIOS"
-  s.description  = <<-DESC
-                  RNUncontrolledDatePickerIOS
-                   DESC
-  s.homepage     = ""
-  s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author       = { "author" => "dmitry.gladkov@@gmail.com" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNUncontrolledDatePickerIOS.git", :tag => "master" }
+  s.name          = "RNUncontrolledDatePickerIOS"
+  s.version       = package["version"]
+  s.summary       = package["description"]
+  s.homepage      = package["homepage"]
+  s.license       = { :type => package["licence"], :file => "LICENSE" }
+  s.author        = { package["author"]["name"] => package["author"]["email"] }
+  s.platform      = :ios, "7.0"
+  s.source        = { :git => package["repository"]["url"], :tag => package["version"] }
   s.source_files  = "RNUncontrolledDatePickerIOS.{h,m}"
-  s.requires_arc = true
+  s.requires_arc  = true
 
   s.dependency "React"
 end

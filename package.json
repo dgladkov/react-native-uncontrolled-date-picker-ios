@@ -1,8 +1,7 @@
-
 {
   "name": "react-native-uncontrolled-date-picker-ios",
   "version": "1.0.0",
-  "description": "",
+  "description": "Uncontrolled version of DatePickerIOS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,13 +11,24 @@
     "datepicker",
     "ios"
   ],
-  "author": "",
-  "license": "",
+  "author": {
+    "name": "Dmitry Gladkov",
+    "email": "dmitry.gladkov@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "prop-types": "*"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgladkov/react-native-uncontrolled-date-picker-ios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgladkov/react-native-uncontrolled-date-picker-ios/issues"
+  },
+  "homepage": "https://github.com/dgladkov/react-native-uncontrolled-date-picker-ios#readme"
 }
