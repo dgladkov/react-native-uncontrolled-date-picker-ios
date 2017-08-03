@@ -1,5 +1,7 @@
 # react-native-uncontrolled-date-picker-ios
 
+Uncontrolled iOS datepicker component that works arround [facebook/react-native#8169](https://github.com/facebook/react-native/issues/8169)
+
 ## Getting started
 
 `$ npm install react-native-uncontrolled-date-picker-ios --save`
